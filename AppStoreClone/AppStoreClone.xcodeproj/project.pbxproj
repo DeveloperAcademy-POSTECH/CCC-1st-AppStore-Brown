@@ -59,15 +59,87 @@
 		38B786B1284984AB006BB9BE /* AppStoreClone */ = {
 			isa = PBXGroup;
 			children = (
-				38B786B2284984AB006BB9BE /* AppDelegate.swift */,
-				38B786B4284984AB006BB9BE /* SceneDelegate.swift */,
-				38B786B6284984AB006BB9BE /* ViewController.swift */,
-				38B786B8284984AB006BB9BE /* Main.storyboard */,
-				38B786BB284984AC006BB9BE /* Assets.xcassets */,
-				38B786BD284984AC006BB9BE /* LaunchScreen.storyboard */,
-				38B786C0284984AC006BB9BE /* Info.plist */,
+				A75D81452861A849008AB3EC /* Global */,
+				A75D81462861A84B008AB3EC /* Models */,
+				A75D81472861A856008AB3EC /* Screens */,
 			);
 			path = AppStoreClone;
+			sourceTree = "<group>";
+		};
+		A75D81452861A849008AB3EC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A75D814B2861A99E008AB3EC /* Resource */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A75D81462861A84B008AB3EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A75D81472861A856008AB3EC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A75D81482861A8F0008AB3EC /* Today */,
+				A75D81492861A918008AB3EC /* Games */,
+				A75D814A2861A91D008AB3EC /* Apps */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A75D81482861A8F0008AB3EC /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				38B786B6284984AB006BB9BE /* ViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		A75D81492861A918008AB3EC /* Games */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		A75D814A2861A91D008AB3EC /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		A75D814B2861A99E008AB3EC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A75D814D2861A9EC008AB3EC /* Supports */,
+				A75D814C2861A9B3008AB3EC /* Storyboard */,
+				38B786BB284984AC006BB9BE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A75D814C2861A9B3008AB3EC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				38B786BD284984AC006BB9BE /* LaunchScreen.storyboard */,
+				38B786B8284984AB006BB9BE /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A75D814D2861A9EC008AB3EC /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				38B786B4284984AB006BB9BE /* SceneDelegate.swift */,
+				38B786B2284984AB006BB9BE /* AppDelegate.swift */,
+				38B786C0284984AC006BB9BE /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
