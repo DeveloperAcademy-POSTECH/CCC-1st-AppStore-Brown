@@ -87,6 +87,7 @@
 		A75D81472861A856008AB3EC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				38B786B6284984AB006BB9BE /* ViewController.swift */,
 				A75D81482861A8F0008AB3EC /* Today */,
 				A75D81492861A918008AB3EC /* Games */,
 				A75D814A2861A91D008AB3EC /* Apps */,
@@ -97,7 +98,6 @@
 		A75D81482861A8F0008AB3EC /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				38B786B6284984AB006BB9BE /* ViewController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
