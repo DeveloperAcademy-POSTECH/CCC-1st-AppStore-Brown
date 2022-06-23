@@ -19,7 +19,7 @@ class TabBarController: UITabBarController {
     
     private lazy var gamesViewController: UIViewController = {
         let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "Games", image: UIImage(systemName: "gamecontroller.fill"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "Games", image: UIImage(systemName: "gamecontroller.fill"), tag: 1)
         viewController.tabBarItem = tabBarItem
         
         return viewController
@@ -27,7 +27,7 @@ class TabBarController: UITabBarController {
     
     private lazy var appsViewController: UIViewController = {
         let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "Apps", image: UIImage(systemName: "square.stack.3d.up"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "Apps", image: UIImage(systemName: "square.stack.3d.up"), tag: 2)
         viewController.tabBarItem = tabBarItem
         
         return viewController
@@ -35,7 +35,7 @@ class TabBarController: UITabBarController {
     
     private lazy var arcadeViewController: UIViewController = {
         let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "Arcade", image: UIImage(systemName: "tortoise.fill"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "Arcade", image: UIImage(systemName: "tortoise.fill"), tag: 3)
         viewController.tabBarItem = tabBarItem
         
         return viewController
@@ -43,7 +43,7 @@ class TabBarController: UITabBarController {
     
     private lazy var searchViewController: UIViewController = {
         let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 4)
         viewController.tabBarItem = tabBarItem
         
         return viewController
