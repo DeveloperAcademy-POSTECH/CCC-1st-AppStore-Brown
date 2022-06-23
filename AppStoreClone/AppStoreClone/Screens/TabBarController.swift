@@ -54,7 +54,4 @@ class TabBarController: UITabBarController {
         
         viewControllers = [todayViewController, gamesViewController, appsViewController, arcadeViewController, searchViewController]
     }
-
-
 }
-
