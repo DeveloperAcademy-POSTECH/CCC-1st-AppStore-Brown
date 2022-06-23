@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabBarController.swift
 //  AppStoreClone
 //
 //  Created by LeeJiSoo on 2022/06/03.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
