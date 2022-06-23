@@ -10,7 +10,7 @@ import UIKit
 class TabBarController: UITabBarController {
     
     private lazy var todayViewController: UIViewController = {
-        let viewController = UIViewController()
+        let viewController = TodayViewController()
         let tabBarItem = UITabBarItem(title: "Today", image: UIImage(systemName: "doc.text.image"), tag: 0)
         viewController.tabBarItem = tabBarItem
         
