@@ -45,8 +45,8 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    func temp() {
-        backgroundColor = .black
+    func layout() {
+        setLayout()
     }
 }
 
