@@ -18,7 +18,6 @@ final class TodayViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.backgroundColor = .blue
         collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
         
         return collectionView
