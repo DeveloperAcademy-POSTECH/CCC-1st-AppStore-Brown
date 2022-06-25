@@ -45,12 +45,16 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    func layout() {
+    func setup() {
         setLayout()
+        
+        subtitleLabel.text = "닥터스트레인지"
+        titleLabel.text = "메인제목이지롱"
+        descriptionLabel.text = "이렇게 아래에 들어가는 글이에요"
     }
 }
 
-extension TodayCollectionViewCell {
+private extension TodayCollectionViewCell {
     func setLayout() {
         [titleLabel, subtitleLabel, descriptionLabel, imageView].forEach { addSubview($0) }
         
