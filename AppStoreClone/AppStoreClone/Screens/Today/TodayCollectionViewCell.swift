@@ -49,3 +49,31 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         backgroundColor = .black
     }
 }
+
+extension TodayCollectionViewCell {
+    func setLayout() {
+        [titleLabel, subtitleLabel, descriptionLabel, imageView].forEach { addSubview($0) }
+        
+        subtitleLabel.snp.makeConstraints {
+            $0.leading.equalToSuperview().inset(24.0)
+            $0.trailing.equalToSuperview().inset(24.0)
+            $0.top.equalToSuperview().inset(24.0)
+        }
+        
+        titleLabel.snp.makeConstraints {
+            $0.leading.equalTo(subtitleLabel)
+            $0.trailing.equalTo(subtitleLabel)
+            $0.top.equalTo(subtitleLabel.snp.bottom).offset(4)
+        }
+        
+        descriptionLabel.snp.makeConstraints {
+            $0.leading.equalTo(subtitleLabel)
+            $0.trailing.equalTo(subtitleLabel)
+            $0.bottom.equalToSuperview().inset(24.0)
+        }
+        
+        imageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+}
