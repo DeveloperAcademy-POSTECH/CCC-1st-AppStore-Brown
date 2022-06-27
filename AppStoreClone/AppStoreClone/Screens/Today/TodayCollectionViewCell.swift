@@ -13,6 +13,7 @@ final class TodayCollectionViewCell: UICollectionViewCell {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.text = "콧구멍에 바람 쐬러"
         label.font = .systemFont(ofSize: 24, weight: .bold)
         label.textColor = .white
         
@@ -21,6 +22,7 @@ final class TodayCollectionViewCell: UICollectionViewCell {
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
+        label.text = "APP CULTURE"
         label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .white
         
@@ -29,6 +31,7 @@ final class TodayCollectionViewCell: UICollectionViewCell {
     
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
+        label.text = "원데이 클래스부터 여행까지! 국내에서 해외까지!"
         label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .white
         
@@ -40,24 +43,19 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 12.0
-        imageView.backgroundColor = .gray
+        imageView.backgroundColor = .red
         
         return imageView
     }()
     
     func setup() {
-        setLayout()
-        
-        subtitleLabel.text = "닥터스트레인지"
-        titleLabel.text = "메인제목이지롱"
-        descriptionLabel.text = "이렇게 아래에 들어가는 글이에요"
+        setupSubViews()
     }
 }
 
 private extension TodayCollectionViewCell {
-    func setLayout() {
+    func setupSubViews() {
         [titleLabel, subtitleLabel, descriptionLabel, imageView].forEach { addSubview($0) }
-        
         subtitleLabel.snp.makeConstraints {
             $0.leading.equalToSuperview().inset(24.0)
             $0.trailing.equalToSuperview().inset(24.0)
