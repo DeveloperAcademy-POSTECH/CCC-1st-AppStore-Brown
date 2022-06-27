@@ -13,10 +13,8 @@ final class TodayViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
         collectionView.register(TodayCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "TodayCollectionReusableView")
         
@@ -25,7 +23,6 @@ final class TodayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -57,7 +54,6 @@ extension TodayViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath) as? TodayCollectionViewCell
         cell?.setup()
-        
         return cell ?? UICollectionViewCell()
     }
     
@@ -65,7 +61,6 @@ extension TodayViewController: UICollectionViewDataSource {
         guard kind == UICollectionView.elementKindSectionHeader,
               let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TodayCollectionReusableView", for: indexPath) as? TodayCollectionReusableView
         else { return UICollectionReusableView() }
-        
         header.setupViews()
         return header
     }

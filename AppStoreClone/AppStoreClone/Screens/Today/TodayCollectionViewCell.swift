@@ -16,7 +16,6 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         label.text = "콧구멍에 바람 쐬러"
         label.font = .systemFont(ofSize: 24, weight: .bold)
         label.textColor = .white
-        
         return label
     }()
     
@@ -25,7 +24,6 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         label.text = "APP CULTURE"
         label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .white
-        
         return label
     }()
     
@@ -34,7 +32,6 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         label.text = "원데이 클래스부터 여행까지! 국내에서 해외까지!"
         label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .white
-        
         return label
     }()
     
@@ -44,7 +41,6 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 12.0
         imageView.backgroundColor = .red
-        
         return imageView
     }()
     
