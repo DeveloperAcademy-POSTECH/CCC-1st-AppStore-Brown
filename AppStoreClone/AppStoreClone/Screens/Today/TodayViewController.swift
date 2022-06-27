@@ -11,6 +11,18 @@ import SnapKit
 
 final class TodayViewController: UIViewController {
     
+    private lazy var scrollView: UIScrollView = {
+        let view = UIScrollView(frame: .zero)
+        view.backgroundColor = .clear
+        view.autoresizingMask = .flexibleHeight
+        view.showsHorizontalScrollIndicator = false
+        view.showsVerticalScrollIndicator = false
+        view.bounces = true
+        view.delegate = self
+        
+        return view
+    }()
+    
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
