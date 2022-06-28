@@ -10,7 +10,7 @@ import UIKit
 class TabBarController: UITabBarController {
     
     private lazy var todayViewController: UIViewController = {
-        let viewController = UIViewController()
+        let viewController = TodayViewController()
         let tabBarItem = UITabBarItem(title: "Today", image: UIImage(systemName: "doc.text.image"), tag: 0)
         viewController.tabBarItem = tabBarItem
         
@@ -27,7 +27,7 @@ class TabBarController: UITabBarController {
     
     private lazy var appsViewController: UIViewController = {
         let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "Apps", image: UIImage(systemName: "square.stack.3d.up"), tag: 2)
+        let tabBarItem = UITabBarItem(title: "Apps", image: UIImage(systemName: "square.stack.3d.up.fill"), tag: 2)
         viewController.tabBarItem = tabBarItem
         
         return viewController
